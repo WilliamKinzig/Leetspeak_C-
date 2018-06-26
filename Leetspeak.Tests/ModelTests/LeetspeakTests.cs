@@ -9,7 +9,7 @@ namespace Leetspeak.Tests
     [TestMethod]
     public void IsTranslator_NumberDivisibleByFour_True()
     {
-      Assert.AreEqual(false, Translator.returnTest(1,3));
+      Assert.AreEqual(true, Translator.returnTest("hello"));
     }
   }
 }
