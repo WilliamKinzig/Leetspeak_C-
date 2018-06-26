@@ -1,11 +1,22 @@
-namespace Leetspeak
+using System;
+class Leetspeak
 {
-  public class Translator
-  {
-    public static bool returnTest(string userInput)
-    {
-      char[] userArray = userInput.ToCharArray();
+  public string userInput { get; set;}
 
+  // public Leetspeak(string input)
+  // {
+  //   userInput = input;
+  // }
+
+  public class Program
+  {
+    public static void Main()
+    {
+
+      Console.WriteLine("Enter a word or sentence! owo");
+      string userInput = Console.ReadLine();
+
+      char[] userArray = userInput.ToCharArray();
 
       for(int i = 0; i < userArray.Length; i++)
       {
@@ -42,16 +53,9 @@ namespace Leetspeak
           userArray[i] = 'Z';
         }
       }
-
-
       string userResult = string.Join("", userArray);
-      if(userResult == "H3WW0Z"){
-        return true;
-      }
-      else{
-        return false;
-      }
-    }
 
+      Console.WriteLine(userResult);
+    }
   }
 }
